@@ -16,7 +16,6 @@
   --accent-soft: #e8eefa;
   --lead-bg: #f3f6fc;
   --tag-bg: #f1eee7;
-  --callout-bg: #f5f2ea;
 
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", P052, Georgia, serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -162,18 +161,7 @@ h1 {
 .hero-text p { color: var(--ink-2); max-width: 38em; }
 .hero-text p.lead { color: var(--ink); }
 
-.callout {
-  display: inline-block;
-  background: var(--callout-bg);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  padding: 0.5rem 0.9rem;
-  margin: 0.4rem 0 1.2rem;
-  color: var(--ink) !important;
-  font-size: 0.95rem;
-}
-
-.links { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.links { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
 .links a {
   display: inline-block;
   border: 1px solid var(--rule); border-radius: 999px;
