@@ -213,7 +213,7 @@
           <p class="pub-meta"><span class="badge">ACM MobiCom '24 · ISAC Workshop</span></p>
           <p class="pub-summary">Soft actor-critic agents place access points in a cell-free integrated sensing
             and communication system, balancing localization accuracy against user rate. A follow-up
-            <a href="#simulator">3-D simulator</a> moves the study to a ray-traced urban scene.</p>
+            <a href="#isacma">multi-agent project</a> moves the study to a ray-traced urban scene.</p>
           <p class="pub-links"><a href="https://doi.org/10.1145/3636534.3698221">Paper</a><a href="https://arxiv.org/abs/2412.07094">arXiv</a><a href="https://github.com/OdurShi/cell-free-isac-ap-deployment">Code</a></p>
         </div>
       </article>
@@ -225,20 +225,22 @@
       <p class="section-note">Research and engineering projects beyond the papers above, each with code, tests and
         reproducible results.</p>
 
-      <article class="pub" id="teamgame">
-        <a class="pub-thumb" href="assets/img/figures/teamgame.webp" data-zoom>
-          <span class="sr-only">Enlarge figure: </span><img src="assets/img/teasers/teamgame.webp"
-            alt="Map of the ray-traced scene showing the path gain of the strongest selected access point, the eight selected sites, the users and the target sample points."
+      <article class="pub" id="isacma">
+        <a class="pub-thumb" href="assets/img/figures/isacma.webp" data-zoom>
+          <span class="sr-only">Enlarge figure: </span><img src="assets/img/teasers/isacma.webp"
+            alt="Map of the ray-traced scene in one time slot: the airspace that is free at each flight level, 24 deployed access points that transmit, receive or are off, 15 users, four UAVs with their paths and the lines of sight used for sensing."
             width="1200" height="750" loading="lazy"></a>
         <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/cell-free-isac-multiagent">Team-Game Access-Point Placement for Cell-Free ISAC on a Ray-Traced Scene</a></h3>
-          <p class="pub-meta"><span class="badge review">Multi-agent optimisation · ISAC</span><span class="role">2026</span></p>
-          <p class="pub-summary">Joins the <a href="#ap">deployment paper</a> and the
-            <a href="#simulator">ray-traced simulator</a>: every access point is an agent choosing one of 345
-            ray-traced candidate sites under a joint rate and localisation utility. I prove convergence and
-            equilibrium guarantees for the game and compare best response with greedy selection, simulated
-            annealing and a genetic algorithm. Best-response equilibria are within 0.04% of the exact optimum
-            on small instances, and a warm start cuts re-optimisation after a hotspot moves by about 40%.</p>
+          <h3 class="pub-title"><a href="https://github.com/OdurShi/cell-free-isac-multiagent">Multi-Agent Placement and Operation for Cell-Free ISAC on a Ray-Traced Scene</a></h3>
+          <p class="pub-meta"><span class="badge review">Multi-agent optimisation · ISAC · Sionna RT</span><span class="role">2025 – 2026</span></p>
+          <p class="pub-summary">Takes the <a href="#ap">deployment paper</a> from a 2-D grid to a ray-traced
+            urban scene: a Sionna RT simulator supplies path gains for 847 candidate positions and lines of
+            sight to aerial targets. Every access point is an agent that first picks one of 345 sites and then
+            switches between transmitting, receiving and sleeping while UAVs fly between the buildings. I prove
+            that both problems are exact potential games. Placement equilibria are within 0.04% of the exact
+            optimum on small instances; in operation, per-AP best response matches tuned central annealing and
+            overtakes it once central decisions are one slot (0.5 s) old. Its advantage is latency, not
+            solution quality.</p>
           <p class="pub-links"><a href="https://github.com/OdurShi/cell-free-isac-multiagent">Code</a></p>
         </div>
       </article>
@@ -288,22 +290,6 @@
             descriptions, a valid time window is estimated, and Gaussian primitives are selected by spatial,
             depth and appearance constraints. Comes with Reason4D, 415 reasoning queries over 12 scenes.</p>
           <p class="pub-links"><a href="https://github.com/OdurShi/4dresplat">Code</a></p>
-        </div>
-      </article>
-
-      <article class="pub" id="simulator">
-        <a class="pub-thumb" href="assets/img/figures/simulator.webp" data-zoom>
-          <span class="sr-only">Enlarge figure: </span><img src="assets/img/teasers/simulator.webp"
-            alt="A rendering of the ray-traced Paris scene next to a map of the best path gain over 847 candidate access-point sites."
-            width="1200" height="750" loading="lazy"></a>
-        <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/sionna-isac-simulation">A Ray-Traced 3-D Simulator for Cell-Free ISAC Deployment</a></h3>
-          <p class="pub-meta"><span class="badge review">Simulation · Sionna RT</span><span class="role">2025 – 2026</span></p>
-          <p class="pub-summary">Moves the access-point deployment study from a 2-D grid to a ray-traced urban
-            scene: a path-gain database for 847 candidate AP positions at seven heights, a Gym environment that
-            maps continuous actions to candidate sites, simulated-annealing and genetic-algorithm baselines, and
-            a 3-D viewer for the resulting deployments.</p>
-          <p class="pub-links"><a href="https://github.com/OdurShi/sionna-isac-simulation">Code</a></p>
         </div>
       </article>
     </section>
