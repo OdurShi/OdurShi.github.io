@@ -46,5 +46,7 @@ then open <http://localhost:4173>.
 2. Push the contents of this folder to its `main` branch.
 3. In the repository settings, under Pages, choose "Deploy from a branch", `main`, `/ (root)`.
 
-The site is then served at <https://odurshi.github.io>. The empty `.nojekyll` file tells GitHub
-Pages to serve the files as they are.
+The site is served at <https://odurshi.com>. The `CNAME` file holds this custom domain; its DNS
+records (four `A`, four `AAAA` and a `www` `CNAME` record, all "DNS only" at Cloudflare) point to
+GitHub Pages, and <https://odurshi.github.io> redirects to it. The empty `.nojekyll` file tells
+GitHub Pages to serve the files as they are.
