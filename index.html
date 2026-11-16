@@ -79,6 +79,8 @@
       <h2 class="section-title" id="news-title">News</h2>
       <ol class="rows news">
         <li class="row"><time datetime="2026-11">Nov 2026</time>
+          <p><a href="#sbls">SBLS</a> and <a href="#qcv">QCV</a> were accepted to AAAI 2027.</p></li>
+        <li class="row"><time datetime="2026-11">Nov 2026</time>
           <p>Released code, data and tests for all of my papers; the index is at
             <a href="https://github.com/OdurShi/research-code">OdurShi/research-code</a>.</p></li>
         <li class="row"><time datetime="2026-09">Sep 2026</time>
@@ -98,7 +100,7 @@
       <p class="section-note"><sup>*</sup> Equal contribution. Shaded entries are first-author or co-first-author work.
         Code for every paper is linked from <a href="https://github.com/OdurShi/research-code">OdurShi/research-code</a>.</p>
 
-      <h3 class="group-title">Manuscripts under review</h3>
+      <h3 class="group-title">Accepted and published</h3>
 
       <article class="pub pub--lead" id="sbls">
         <a class="pub-thumb" href="assets/img/figures/sbls.webp" data-zoom>
@@ -108,44 +110,12 @@
         <div class="pub-body">
           <h3 class="pub-title"><a href="https://github.com/OdurShi/sbls">Open-World Classification as Bayesian Model Selection over Evolving Label Spaces</a></h3>
           <p class="pub-authors"><strong>S. Shi</strong>, M. Zhang, Y. Hu, H. Zhang, S. Hu, Z. Huang, Z. Lin, X. Zhang</p>
-          <p class="pub-meta"><span class="badge review">Under review</span><span class="role">First author</span></p>
+          <p class="pub-meta"><span class="badge">AAAI 2027</span><span class="role">First author</span></p>
           <p class="pub-summary">SBLS decides when a deployed text classifier's label set should change
             (<em>stay</em>, <em>add</em> or <em>split</em>) by sequential Bayesian model selection, testing each proposed
             edit only on observations that arrive later. Without target-task labels it reaches 79.0 Macro-F1 on the
             12-dataset BOLT suite and 80.5 Edit-F1 at a 4.0% false-edit probability on streaming benchmarks.</p>
           <p class="pub-links"><a href="https://github.com/OdurShi/sbls">Code</a></p>
-        </div>
-      </article>
-
-      <article class="pub pub--lead pub--wide" id="vdopd">
-        <a class="pub-thumb" href="assets/img/figures/vdopd.webp" data-zoom>
-          <span class="sr-only">Enlarge figure: </span><img src="assets/img/teasers/vdopd.webp"
-            alt="Three panels: existing on-policy distillation copies one teacher signal; two prompt views of the same teacher can disagree; VD-OPD supervises the student with what both views support."
-            width="1704" height="695" loading="lazy"></a>
-        <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/vd-opd">View-Decomposed On-Policy Distillation for Robust Reasoning in Large Language Models</a></h3>
-          <p class="pub-authors">M. Chen<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, L. Yang, Z. Tian, B. Li, Y. Zou, X. Zhang</p>
-          <p class="pub-meta"><span class="badge review">Under review</span><span class="role">Co-first author</span></p>
-          <p class="pub-summary">VD-OPD scores each student prefix under two task-preserving prompt views and
-            distills their geometric consensus, weighted by how much the views agree. Qwen3-1.7B reaches 36.7% macro
-            Avg@8 on six math benchmarks, against 34.8% for the strongest baseline and 26.1% before distillation.</p>
-          <p class="pub-links"><a href="https://github.com/OdurShi/vd-opd">Code</a></p>
-        </div>
-      </article>
-
-      <article class="pub pub--lead pub--wide" id="sigma">
-        <a class="pub-thumb" href="assets/img/figures/sigma.webp" data-zoom>
-          <span class="sr-only">Enlarge figure: </span><img src="assets/img/teasers/sigma.webp"
-            alt="Three panels: one request under original, revised and reordered guidance; a model trained on fixed guidance keeps the old answer or changes it unnecessarily; SIGMA answers correctly in both cases."
-            width="1704" height="583" loading="lazy"></a>
-        <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/sigma">SIGMA: Label-Efficient Training of Language Models to Follow Changing Structured Guidance</a></h3>
-          <p class="pub-authors">Z. Lin<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, T. Wang, S. Hu, X. Jie, J. Lin, J. Pan, X. Zhang</p>
-          <p class="pub-meta"><span class="badge review">Under review</span><span class="role">Co-first author</span></p>
-          <p class="pub-summary">SIGMA pairs each labeled input with two versions of its task guidance and aligns
-            the relative scores of all candidate outputs across them. Four examples per intent outperform 16-shot
-            LoRA fine-tuning under unseen guidance combinations, with 75% fewer training annotations.</p>
-          <p class="pub-links"><a href="https://github.com/OdurShi/sigma">Code</a></p>
         </div>
       </article>
 
@@ -157,18 +127,13 @@
         <div class="pub-body">
           <h3 class="pub-title"><a href="https://github.com/OdurShi/qcv">Questions as Codes: Correcting Multimodal Reasoning at Test Time</a></h3>
           <p class="pub-authors">J. Chen, M. Zhang, <strong>S. Shi</strong>, H. Zhang, X. Sun, X. Zhang</p>
-          <p class="pub-meta"><span class="badge review">Under review</span></p>
+          <p class="pub-meta"><span class="badge">AAAI 2027</span></p>
           <p class="pub-summary">QCV corrects a frozen vision-language model at test time by asking relation-linked
             questions and projecting the answer distributions onto jointly feasible answer codes. Macro accuracy on
             CLEVR, GQA, ChartQA and AGQA-Decomp rises from 73.9% to 78.4%.</p>
           <p class="pub-links"><a href="https://github.com/OdurShi/qcv">Code</a></p>
         </div>
       </article>
-
-      <p class="pub-note" id="rat"><em>Training Vision-Language Models with Margin-Based Resolution Selection</em>
-        (H. Yu, <strong>S. Shi</strong>, et al.) is a further manuscript under review.</p>
-
-      <h3 class="group-title">Published</h3>
 
       <article class="pub pub--lead" id="mrime">
         <a class="pub-thumb" href="assets/img/figures/mrime.webp" data-zoom>
@@ -217,6 +182,43 @@
           <p class="pub-links"><a href="https://doi.org/10.1145/3636534.3698221">Paper</a><a href="https://arxiv.org/abs/2412.07094">arXiv</a><a href="https://github.com/OdurShi/cell-free-isac-ap-deployment">Code</a></p>
         </div>
       </article>
+
+      <h3 class="group-title">Manuscripts under review</h3>
+
+      <article class="pub pub--lead pub--wide" id="vdopd">
+        <a class="pub-thumb" href="assets/img/figures/vdopd.webp" data-zoom>
+          <span class="sr-only">Enlarge figure: </span><img src="assets/img/teasers/vdopd.webp"
+            alt="Three panels: existing on-policy distillation copies one teacher signal; two prompt views of the same teacher can disagree; VD-OPD supervises the student with what both views support."
+            width="1704" height="695" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://github.com/OdurShi/vd-opd">View-Decomposed On-Policy Distillation for Robust Reasoning in Large Language Models</a></h3>
+          <p class="pub-authors">M. Chen<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, L. Yang, Z. Tian, B. Li, Y. Zou, X. Zhang</p>
+          <p class="pub-meta"><span class="badge review">Under review</span><span class="role">Co-first author</span></p>
+          <p class="pub-summary">VD-OPD scores each student prefix under two task-preserving prompt views and
+            distills their geometric consensus, weighted by how much the views agree. Qwen3-1.7B reaches 36.7% macro
+            Avg@8 on six math benchmarks, against 34.8% for the strongest baseline and 26.1% before distillation.</p>
+          <p class="pub-links"><a href="https://github.com/OdurShi/vd-opd">Code</a></p>
+        </div>
+      </article>
+
+      <article class="pub pub--lead pub--wide" id="sigma">
+        <a class="pub-thumb" href="assets/img/figures/sigma.webp" data-zoom>
+          <span class="sr-only">Enlarge figure: </span><img src="assets/img/teasers/sigma.webp"
+            alt="Three panels: one request under original, revised and reordered guidance; a model trained on fixed guidance keeps the old answer or changes it unnecessarily; SIGMA answers correctly in both cases."
+            width="1704" height="583" loading="lazy"></a>
+        <div class="pub-body">
+          <h3 class="pub-title"><a href="https://github.com/OdurShi/sigma">SIGMA: Label-Efficient Training of Language Models to Follow Changing Structured Guidance</a></h3>
+          <p class="pub-authors">Z. Lin<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, T. Wang, S. Hu, X. Jie, J. Lin, J. Pan, X. Zhang</p>
+          <p class="pub-meta"><span class="badge review">Under review</span><span class="role">Co-first author</span></p>
+          <p class="pub-summary">SIGMA pairs each labeled input with two versions of its task guidance and aligns
+            the relative scores of all candidate outputs across them. Four examples per intent outperform 16-shot
+            LoRA fine-tuning under unseen guidance combinations, with 75% fewer training annotations.</p>
+          <p class="pub-links"><a href="https://github.com/OdurShi/sigma">Code</a></p>
+        </div>
+      </article>
+
+      <p class="pub-note" id="rat"><em>Training Vision-Language Models with Margin-Based Resolution Selection</em>
+        (H. Yu, <strong>S. Shi</strong>, et al.) is a further manuscript under review.</p>
     </section>
 
     <!-- ============================== Projects ============================== -->
