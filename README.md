@@ -12,6 +12,7 @@ assets/img/teasers/*.webp  the image on the card of each paper or project: 1200 
                            three wide figures that keep their own shape and span the card
 assets/img/figures/*.webp  the same figures at full size, opened by a click on a card image
 tools/make_thumbs.py       builds both sets (same margin and background for all)
+papers/<name>.pdf          author version of a paper, main text and appendix in one file
 favicon.ico, assets/img/favicon.svg
 ```
 
@@ -28,6 +29,9 @@ then open <http://localhost:4173>.
 - **Photo**: replace `assets/img/profile.jpg` (keep the file name).
 - **CV**: not linked at the moment. To add it, put the PDF in `assets/cv/` and add a link to the
   navigation and to the list of links under the introduction.
+- **Papers**: the address of each file in `papers/` is permanent (it is linked from the CV). To
+  update a paper, replace the file and keep its name. `robots.txt` asks search engines not to
+  fetch the manuscripts that are still under review; remove a line there once that paper is out.
 - **News**: add an `<li class="row">` at the top of the list in the `News` section.
 - **Publications and projects**: copy an `<article class="pub">` block. Add the figure to
   `tools/make_thumbs.py` and run `python tools/make_thumbs.py <key>`; it writes the card image

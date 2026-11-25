@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /papers/vd-opd.pdf
+Disallow: /papers/sigma.pdf
+Disallow: /papers/rat.pdf

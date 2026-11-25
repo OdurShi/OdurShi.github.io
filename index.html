@@ -108,14 +108,14 @@
             alt="Timely edit recall plotted against safety: SBLS lies above and to the right of four baselines and needs 3.5 times fewer observations than fixed-horizon selection."
             width="1200" height="750" loading="lazy"></a>
         <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/sbls">Open-World Classification as Bayesian Model Selection over Evolving Label Spaces</a></h3>
+          <h3 class="pub-title"><a href="papers/sbls.pdf">Open-World Classification as Bayesian Model Selection over Evolving Label Spaces</a></h3>
           <p class="pub-authors"><strong>S. Shi</strong>, M. Zhang, Y. Hu, H. Zhang, S. Hu, Z. Huang, Z. Lin, X. Zhang</p>
           <p class="pub-meta"><span class="badge">AAAI 2027</span><span class="role">First author</span></p>
           <p class="pub-summary">SBLS decides when a deployed text classifier's label set should change
             (<em>stay</em>, <em>add</em> or <em>split</em>) by sequential Bayesian model selection, testing each proposed
             edit only on observations that arrive later. Without target-task labels it reaches 79.0 Macro-F1 on the
             12-dataset BOLT suite and 80.5 Edit-F1 at a 4.0% false-edit probability on streaming benchmarks.</p>
-          <p class="pub-links"><a href="https://github.com/OdurShi/sbls">Code</a></p>
+          <p class="pub-links"><a href="papers/sbls.pdf">Paper</a><a href="https://github.com/OdurShi/sbls">Code</a></p>
         </div>
       </article>
 
@@ -125,13 +125,13 @@
             alt="Radar chart of evidence quality for self-consistency, implication and QCV, above a table of accuracy gains for four vision-language models on four datasets."
             width="1200" height="750" loading="lazy"></a>
         <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/qcv">Questions as Codes: Correcting Multimodal Reasoning at Test Time</a></h3>
+          <h3 class="pub-title"><a href="papers/qcv.pdf">Questions as Codes: Correcting Multimodal Reasoning at Test Time</a></h3>
           <p class="pub-authors">J. Chen, M. Zhang, <strong>S. Shi</strong>, H. Zhang, X. Sun, X. Zhang</p>
           <p class="pub-meta"><span class="badge">AAAI 2027</span></p>
           <p class="pub-summary">QCV corrects a frozen vision-language model at test time by asking relation-linked
             questions and projecting the answer distributions onto jointly feasible answer codes. Macro accuracy on
             CLEVR, GQA, ChartQA and AGQA-Decomp rises from 73.9% to 78.4%.</p>
-          <p class="pub-links"><a href="https://github.com/OdurShi/qcv">Code</a></p>
+          <p class="pub-links"><a href="papers/qcv.pdf">Paper</a><a href="https://github.com/OdurShi/qcv">Code</a></p>
         </div>
       </article>
 
@@ -191,13 +191,13 @@
             alt="Three panels: existing on-policy distillation copies one teacher signal; two prompt views of the same teacher can disagree; VD-OPD supervises the student with what both views support."
             width="1704" height="695" loading="lazy"></a>
         <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/vd-opd">View-Decomposed On-Policy Distillation for Robust Reasoning in Large Language Models</a></h3>
-          <p class="pub-authors">M. Chen<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, L. Yang, Z. Tian, B. Li, Y. Zou, X. Zhang</p>
+          <h3 class="pub-title"><a href="papers/vd-opd.pdf">View-Decomposed On-Policy Distillation for Robust Reasoning in Large Language Models</a></h3>
+          <p class="pub-authors">M. Chen<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, L. Yang, Z. Tian, B. Li, Y. Zou, J. Jiao</p>
           <p class="pub-meta"><span class="badge review">Under review</span><span class="role">Co-first author</span></p>
           <p class="pub-summary">VD-OPD scores each student prefix under two task-preserving prompt views and
             distills their geometric consensus, weighted by how much the views agree. Qwen3-1.7B reaches 36.7% macro
             Avg@8 on six math benchmarks, against 34.8% for the strongest baseline and 26.1% before distillation.</p>
-          <p class="pub-links"><a href="https://github.com/OdurShi/vd-opd">Code</a></p>
+          <p class="pub-links"><a href="papers/vd-opd.pdf">Paper</a><a href="https://github.com/OdurShi/vd-opd">Code</a></p>
         </div>
       </article>
 
@@ -207,18 +207,19 @@
             alt="Three panels: one request under original, revised and reordered guidance; a model trained on fixed guidance keeps the old answer or changes it unnecessarily; SIGMA answers correctly in both cases."
             width="1704" height="583" loading="lazy"></a>
         <div class="pub-body">
-          <h3 class="pub-title"><a href="https://github.com/OdurShi/sigma">SIGMA: Label-Efficient Training of Language Models to Follow Changing Structured Guidance</a></h3>
-          <p class="pub-authors">Z. Lin<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, T. Wang, S. Hu, X. Jie, J. Lin, J. Pan, X. Zhang</p>
+          <h3 class="pub-title"><a href="papers/sigma.pdf">SIGMA: Label-Efficient Training of Language Models to Follow Changing Structured Guidance</a></h3>
+          <p class="pub-authors">Z. Lin<sup>*</sup>, <strong>S. Shi</strong><sup>*</sup>, J. Jiao, T. Wang, S. Hu, X. Jie, J. Lin, J. Pan</p>
           <p class="pub-meta"><span class="badge review">Under review</span><span class="role">Co-first author</span></p>
           <p class="pub-summary">SIGMA pairs each labeled input with two versions of its task guidance and aligns
             the relative scores of all candidate outputs across them. Four examples per intent outperform 16-shot
             LoRA fine-tuning under unseen guidance combinations, with 75% fewer training annotations.</p>
-          <p class="pub-links"><a href="https://github.com/OdurShi/sigma">Code</a></p>
+          <p class="pub-links"><a href="papers/sigma.pdf">Paper</a><a href="https://github.com/OdurShi/sigma">Code</a></p>
         </div>
       </article>
 
-      <p class="pub-note" id="rat"><em>Training Vision-Language Models with Margin-Based Resolution Selection</em>
-        (H. Yu, <strong>S. Shi</strong>, et al.) is a further manuscript under review.</p>
+      <p class="pub-note" id="rat"><a href="papers/rat.pdf"><em>Training Vision-Language Models with Margin-Based Resolution Selection</em></a>
+        (H. Yu, <strong>S. Shi</strong>, E. Zhou, Z. Yang, Y. Wang, D. Gao, S. Huang, X. Yan, X. Zhang) is a
+        further manuscript under review.</p>
     </section>
 
     <!-- ============================== Projects ============================== -->
